@@ -1,4 +1,4 @@
-# Hardware-Efficient Vision Transformer Lite for FPGA
+# Hardware-Efficient Vision Transformer Lite Architecture for FPGA
 
 This repository presents the hardware design artifacts and experimental results for a hardware-efficient implementation of the Multi-Head Self-Attention (MHSA) layer used in a lightweight Vision Transformer (ViT-Lite) architecture.
 
