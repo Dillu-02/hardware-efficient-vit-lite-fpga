@@ -14,16 +14,15 @@ The MHSA accelerator implemented in this repository is intended to serve as a st
 
 ---
 
+
 ## Repository Overview
 
-This repository is intentionally minimal and contains only core design and evaluation artifacts.
+This repository contains the core design and evaluation artifacts of the MHSA accelerator.
 
 - `HLS/` - HLS design files and testbench for the MHSA accelerator
-- `data/` - Formatted inputs and exported weights used for HLS validation
-- `docs/` - Figures summarizing model and hardware results
-- `notebook/` - Reference notebook used for software-side processing and evaluation
-- `README.md`
-
+- `data/` - Selected formatted inputs and exported weights used for HLS validation
+- `docs/` - Architecture diagrams, FPGA integration figures, and experimental results
+- `README.md` - Project overview and documentation
 
 ---
 
@@ -68,24 +67,12 @@ These files are generated offline and are included solely to support:
 
 Raw datasets and trained model checkpoints are intentionally not included.
 
----
-
-## Software Processing Notebook
-
-The `notebook/` directory contains a reference Jupyter notebook used during model development and evaluation.
-
-The notebook documents:
-- Data preprocessing steps
-- Model-side evaluation workflow
-- Generation of result figures included in the `docs/` directory
-
-The notebook is provided for transparency and contextual understanding of the reported results. It is not intended as a complete end-to-end training or reproduction pipeline.
 
 ---
 
 ## Experimental Results and Figures
 
-The `docs/` directory contains figures used to evaluate both the ViT-Lite model and the MHSA hardware accelerator.
+The `docs/` directory contains figures describing the evaluation of both the ViT-Lite model and the MHSA hardware accelerator.
 
 ### Figures Overview
 
@@ -140,9 +127,10 @@ PL utilization metrics are used to assess scalability, feasibility, and headroom
 
 ## Notes
 
-- Dataset files and trained model checkpoints are not included.
-- FPGA bitstreams and hardware handoff files are intentionally excluded.
-- This repository documents design methodology and experimental outcomes rather than providing a turnkey deployment solution.
+- Raw datasets and trained model checkpoints are not included.
+- Generated FPGA bitstreams and hardware handoff files are excluded.
+- Selected input tensors and exported weights are provided for HLS validation.
+- This repository documents the accelerator architecture, implementation methodology, and experimental outcomes rather than providing a complete end-to-end training or deployment package.
 
 ---
 
